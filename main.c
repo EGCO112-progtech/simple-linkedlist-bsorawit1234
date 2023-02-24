@@ -117,12 +117,12 @@ int main(int argc, const char * argv[]) {
     /*  Exercise VI Free all node !!
          //use a loop to help
     */
-    // while(head != NULL) {
-    //     tmp = head;
-    //     head = head->next;
-    //     printf("%3d", tmp->value);
-    //     free(tmp);
-    // }
+    while(head != NULL) {
+        tmp = head;
+        head = head->next;
+        printf("%3d", tmp->value);
+        free(tmp);
+    }
     
     return 0;
 }
